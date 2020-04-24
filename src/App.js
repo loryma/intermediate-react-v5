@@ -4,12 +4,14 @@ import { Router, Link } from "@reach/router";
 import Details from "./Details";
 import SearchParams from "./SearchParams";
 import ThemeContext from "./ThemeContext";
+import Check from "./Check";
 
 const App = () => {
   const theme = useState("darkblue");
   return (
     <ThemeContext.Provider value={theme}>
       <div>
+        {/* <Check /> */}
         <header>
           <Link to="/">Adopt Me!</Link>
         </header>
@@ -22,4 +24,5 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
